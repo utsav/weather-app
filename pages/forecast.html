@@ -1,0 +1,9 @@
+Forecast for {{ city }}
+
+<div ng-repeat="w in weatherResult.list">
+	<div class="row">
+		<div class="col-md-12">
+			<weather-result weather-day="w" convert-to-date="convertToDate(date)" convert-to-farenheit="convertToFarenheit(temp)" date-format="MMM d, y"></weather-result>
+		</div>
+	</div>
+</div>
